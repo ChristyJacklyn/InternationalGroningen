@@ -37,11 +37,11 @@
 }
 
 @keyframes imagemove{
-    from{left:100px}
+    from{left:-100px}
     to{left:0px}
 }
 @keyframes imagemove2{
-    from{right:100px}
+    from{right:-100px}
     to{right:0px}
 }
 
@@ -87,41 +87,32 @@
 
 
 .gridcontainer {
-    display: grid;
-    grid-template: 50fr 50fr/25fr 25fr 25fr 25fr;
-    justify-content: center; /* Horizontally center the grid */
-    align-content: center;  
-    gap: 5px;
-    width: 70vw;
-    height: 100vh;
-    padding: 2rem;
-    margin: 2rem;
+    grid-template: 300px 300px 300px 300px/ 1fr 1fr 1fr ;
 
 }
 .image{
-   
-    width: 100%;
-    height:100%;
+    
     object-fit: cover;
-    transition: transform 0.5s ease;
    
 }
-.activitydiv{
-    transition: transform 0.3s ease-in;
+
+.gridimage{
+    transition: all 0.5s ease;
 }
-.image:hover, .activitydiv:hover {
+
+.gridimage:hover, .activitydiv:hover {
     transform: scale(0.9); /* Slight zoom on hover */
   }
 
-.image1{
-    grid-row: 1/3;
-    grid-column: 1/3;
+
+.activitydiv{
+    transition: transform 0.3s ease-in;
 }
 
 
 @media screen and (max-width:700px){
     .gridcontainer{
-        grid-template: 1fr/1fr;
+        grid-template: 1fr/ 1fr;
         width: 100vw;
         height: auto;
     }
@@ -143,3 +134,163 @@
 .smallcardimage:hover{
     transform: translateY(-10px);
 }
+
+/* main page second div explaination*/
+.introdiv::first-letter{
+    font-size: 45px;
+    line-height: 1.0;
+}
+
+/*/secondfooter */
+
+.thispara::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+.secondgridcontainer{
+    display: grid;
+    grid-template: 1fr/20fr 30fr;
+}
+
+.secondgridcontainer2{
+    display: grid;
+    grid-template: 1fr/30fr 20fr;
+}
+
+@media screen and (max-width:700px){
+    .secondgridcontainer,.secondgridcontainer2{
+        grid-template: 1fr/1fr;
+        width: 100vw;
+        height: auto;
+    }
+}
+
+/* doing business grid image animation*/
+.buinessimage1:hover{
+    position: relative;
+    animation: imagemove 2s ease;
+}
+
+.businessimage2:hover{
+    position: relative;
+    animation: imagemove2 2s ease;
+}
+
+/* Arrow at whyfroningen page animation*/
+.animationarrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #325f46; /* Color of the arrow */
+    animation: moveArrow 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes moveArrow {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+  }
+
+  /*working in groningen page pagecard hover effect*/
+
+
+  /* before you move page grid */
+  .beforeyoumovegrid{
+    grid-template: 300px 300px 300px 300px/ 1fr 1fr 1fr ;
+  }
+
+  .beforeyoumovefirstletter::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.0;
+  }
+.beforeyoumoveheading{
+    position: relative;
+    animation: beforemovediv 2s ease;
+}
+
+ @keyframes beforemovediv{
+    from{right:100px}
+    to{right:0px}
+}
+
+/* befor you move grid on study in griningen page*/
+
+.gridarrow{
+    transition: all 1s ease;
+}
+
+.beforemovegrid:hover .gridarrow{
+    transform: scale(0.9) translateX(20px); /* Slight zoom on hover */
+  }
+
+  @media screen and (max-width:700px){
+    .beforeyoumovegrid{
+        grid-template: 1fr/1fr;
+        width: auto;
+        height: auto;
+    }
+}
+
+.searcharrow{
+    transition: all 1s ease;
+}
+
+.searchdiv:hover .searcharrow{
+    transform: scale(0.9) translateX(30px); /* Slight zoom on hover */
+  }
+
+
+  /* login nav Dropdown menu*/
+  .dropbtn {
+   
+    border: none;
+  }
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content{
+    display: none;
+    position: fixed;
+    min-width: 200px;
+    box-shadow: 8px;
+    z-index: 1;
+    margin-left: 2rem;
+    margin-right: 3rem;   
+}
+.dropdown-content a{
+  color: black;
+  padding: 10px 10px;
+  display: block;
+  width: 100%;
+  border: gray 1px;
+ 
+}
+
+.dropdown-content a:hover {
+    background-color:whitesmoke;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+   
+    display: block;
+    width: 100vw;
+    left: 0;
+    right: 0;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    text-decoration: underline ;
+}
+

@@ -9,7 +9,7 @@ const PageLayout = ({image,imageTitle,desc}) =>{
                     <img
                         src={image}
                         alt=''
-                        className="h-[75vh] w-full object-cover opacity-90"
+                        className="h-[55vh] w-full object-cover opacity-70"
                     />
                  
                 <div className="paradiv absolute flex flex-col bottom-0 left-0 right-0 p-1 prounded-lg">

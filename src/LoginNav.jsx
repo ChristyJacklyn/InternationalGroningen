@@ -1,23 +1,33 @@
 import React,{useState} from "react";
-import {Link } from "react-router-dom";
-
+import {Link, Outlet } from "react-router-dom";
+import searchicon from './assets/searchicon.png';
+import cancleicon from './assets/cancleicon.png';
+import Search from "./Components/search";
+import SearchLayout from "./Components/searchLayout";
 const LoginNav = () => {
 
         const [isOpen, setIsOpen] = useState(false);
+        const [isVisible, setIsVisible] =useState(false);
+        const [cancle, setCancle] = useState(false);
       
         const toggleMenu = () => {
           setIsOpen(!isOpen);
         };
 
-        const toggleDropDown = () =>{
-          setIsOpen(!isOpen);
+    
+
+        const handleOnClick =() =>{
+          setIsVisible(!isVisible);
         }
 
+        const handlecancle =() => {
+          setIsVisible(!isVisible);
+        }
     
     return(
         <nav className="bg-white p-7 rounded-sm border-4">
             <div className="container mx-auto flex justify-between items-center border-2 rounded-md p-4 ">
-                <div className="text-blue-800 text-lg font-semibold">
+                <div className="text-blue-800 text-lg font-semibold font-oswald" style={{width:'120px', height:'auto', fontSize:'30px'}}>
                 <Link to="/">International Groningen</Link>
                 </div>
                 <div className="block lg:hidden">
@@ -40,13 +50,25 @@ const LoginNav = () => {
                       </svg>
                   </button>
                 </div>
-        <ul className={`lg:flex lg:items-center lg:space-x-6 ${isOpen ? 'block' : 'hidden'} lg:block font-trirong` }>
+        <ul className={`lg:flex lg:items-center lg:space-x-6 ${isOpen ? 'block' : 'hidden'} lg:block font-trirong `}
+        style={{zIndex: isVisible ? 1 : 10,fontSize:'20px', fontWeight:'semi-bold' /* Lower z-index than overlay div when isVisible is true*/}}>
+         
         <li>
             <Link
               to="/whygroningen"
-              className="block text-blue-800 hover:text-gray-300 lg:inline-block"
-            >
-              Why Groningen Region
+              className="block text-blue-800 hover:text-gray-500 lg:inline-block"
+             >
+              <div className="dropdown">
+                <button className="dropbtn">Why Groningen</button>
+                <div className="dropdown-content rounded">
+                  <div className="rounded-xl bg-white font-oswald ">
+                      <div><a href="" className="href relative">Living <div className="absolute top-0 left-20" style={{fontSize:'30px',color:'black',fontWeight:'bold'}}> &#8594;</div></a></div>
+                      <div><a href="" className="href relative">Working<div className="absolute top-0 left-20" style={{fontSize:'30px',color:'black',fontWeight:'bold'}}> &#8594;</div></a></div>
+                      <div><a href="" className="href relative">Study<div className="absolute top-0 left-20" style={{fontSize:'30px',color:'black',fontWeight:'bold'}}> &#8594;</div></a></div>
+                      </div> 
+                    </div>
+                </div>
+              
             </Link>
           </li>
           <li>
@@ -77,15 +99,26 @@ const LoginNav = () => {
           </li>
           <li>
             <Link
-              to="/connect"
+              to="/business"
               className="block text-blue-800 hover:text-gray-300 lg:inline-block"
             >
-             Connect
+           Doing Business
             </Link>
-          </li>
+          </li> 
+
+                     <Link to='/language'>
+                        <li className=""><img src={searchicon} alt="" style={{width:'30px', height:'30px',color:''}}/></li>
+                        </Link>   
          
         </ul>
       </div>
+          {/*{isVisible && 
+            <Search/>
+          }
+          */}
+
+
+          
     </nav>
     );
         {/*<header>

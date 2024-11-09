@@ -24,18 +24,6 @@ function LivingInGroningen () {
     return(
       <div className="flex flex-col items-center p-3 m-3">
         <GridComponent image={image} title={title} desc={desc} items={items}/>
-       <div className="gridcontainer">
-            <div className="image image1"><img src={image1} className=""></img><p className="p-3">Finding a place to live in The Hague doesn’t have to be a challenge. From cities to local districts and neighbourhoods, find your ideal home in the region.
-                        Cycling Keizerstraat
-                        Districts in The Hague region
-                        From sandy beaches and shopping hotspots to grand government buildings and world-famous landmarks, there’s lots to explore in The Hague metropolitan area.
-                        Cycling The Hague
-                        Getting around</p></div>
-            <div className="image image2"><img src={image2}></img><p>From sandy beaches and shopping hotspots to grand government buildings and world-famous landmarks, there’s lots to explore in The Hague metropolitan area.Cycling The Hague</p></div>
-            <div className="image image3"><img src={image3} className="r"></img></div>
-            <div className="image image4"><img src={image4}></img></div>
-            <div className="image image5"><img src={image5} className=""></img></div>
-       </div>
        </div>
     );
 }

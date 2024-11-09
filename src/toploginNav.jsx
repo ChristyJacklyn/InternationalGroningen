@@ -1,5 +1,7 @@
 import React,{useState} from "react";
 import {Link} from 'react-router-dom';
+import Search from "./Components/search";
+
 
 
 const TopLoginNav = () => {
@@ -39,29 +41,33 @@ const TopLoginNav = () => {
                     </button>
                 </div>
                 <ul className={`lg:flex lg:justify-center lg:block ${isOpen ? 'block' :'hidden'} lg:space-x-5`}>
+                  
                     <li>
-                      <Link to='/events'
+                      <Link to='/aboutus'
                        className='block hover:text-gray-300 lg:inline-block'>
                       About us
                       </Link>
                     </li>
                     <li>
-                        <Link to='/'
+                        <Link to='/contact'
                         className='block hover:text-gray-300 lg:inline-block'>
                         Contact us
                         </Link>
                     </li>
                     <li>
-                        <Link to='/'
+                        <Link to='/newsletter'
                         className='block hover:text-gray-300 lg:inline-block'>
                         NewsLetter
                         </Link>
                     </li>
                     <li>
-                        <Link to='/'>
-                        Language
-                        </Link>        
+                    <Link to='/events'
+                       className='block hover:text-gray-300 lg:inline-block'>
+                            Events
+                      </Link>
                     </li>
+                       
+                    
                 </ul>
             </div>
 
