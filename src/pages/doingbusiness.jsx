@@ -7,6 +7,7 @@ import business3 from '../assets/business3.jpg';
 import EventsInput from "../Components/event";
 
 function Business() {
+
 const image = business;
 const title = 'Doing Business in Groningen';
 const desc = `Groningen, a city known for its pioneering power and thriving startup scene, is a magnet for talent from all over the world. In the shadow of historic canal houses and under the watchful eye of the famous Martini Tower, a new generation of young thinkers and doers are coming together to work on revolutionary concepts and sustainable solutions to today's global challenges. Here, collaboration has permeated every fiber of the city.`;

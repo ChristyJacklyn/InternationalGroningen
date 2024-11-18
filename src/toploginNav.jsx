@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import {Link} from 'react-router-dom';
 import Search from "./Components/search";
+import gnlogo from './assets/gnlogo.png';
 
 
 
@@ -13,7 +14,9 @@ const TopLoginNav = () => {
 
     return(
         <nav className="bg-blue-950 p-2 border">
-            <div className='flex spax-x-6 justify-end items-center p-1 mx-auto text-white'>
+            <div className="flex flex-col items-center p-3 absolute m-2 justify-start bg-blue-100 rounded-xl"><img src={gnlogo} alt="" className="w-20 h-30 rounded-xl" /></div> 
+            <div className='flex spax-x-6 justify-end items-center p-1 mx-auto text-white relative'>
+          
                 
                 <div className="block lg:hidden">
                 <button onClick={toggleMenu} className="text-blue-500 focus:outline-none lg:hidden">

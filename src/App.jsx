@@ -1,7 +1,7 @@
 // src/App.js or src/App.tsx
 // src/App.js
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import Footer from './Footer';
 import LoginNav from './LoginNav';
 import SecondFooter from './secondFooter';

@@ -4,6 +4,8 @@ import searchicon from './assets/searchicon.png';
 import cancleicon from './assets/cancleicon.png';
 import Search from "./Components/search";
 import SearchLayout from "./Components/searchLayout";
+import gnlogo from './assets/gnlogo.png';
+
 const LoginNav = () => {
 
         const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +27,12 @@ const LoginNav = () => {
         }
     
     return(
-        <nav className="bg-white p-7 rounded-sm border-4">
-            <div className="container mx-auto flex justify-between items-center border-2 rounded-md p-4 ">
+        <nav className="p-7 rounded-sm border-4 bg-orange-50">
+            <div className="container mx-auto flex justify-between items-center border-2 rounded-md p-4 bg-white">
                 <div className="text-blue-800 text-lg font-semibold font-oswald" style={{width:'120px', height:'auto', fontSize:'30px'}}>
                 <Link to="/">International Groningen</Link>
                 </div>
+               
                 <div className="block lg:hidden">
                   <button
                       onClick={toggleMenu}
@@ -50,13 +53,13 @@ const LoginNav = () => {
                       </svg>
                   </button>
                 </div>
-        <ul className={`lg:flex lg:items-center lg:space-x-6 ${isOpen ? 'block' : 'hidden'} lg:block font-trirong `}
+        <ul className={`lg:flex lg:items-center lg:space-x-6 ${isOpen ? 'block' : 'hidden'} lg:block font-oswald text-gray-800`}
         style={{zIndex: isVisible ? 1 : 10,fontSize:'20px', fontWeight:'semi-bold' /* Lower z-index than overlay div when isVisible is true*/}}>
          
         <li>
             <Link
               to="/whygroningen"
-              className="block text-blue-800 hover:text-gray-500 lg:inline-block"
+              className="block  hover:text-gray-500 lg:inline-block"
              >
               <div className="dropdown">
                 <button className="dropbtn">Why Groningen</button>
@@ -74,7 +77,7 @@ const LoginNav = () => {
           <li>
             <Link
               to="/relocating"
-              className="block text-blue-800 hover:text-gray-300 lg:inline-block"
+              className="block hover:text-gray-300 lg:inline-block"
             >
              Relocating
             </Link>
@@ -84,7 +87,7 @@ const LoginNav = () => {
         <li>
             <Link
               to="/workingingroningen"
-              className="block text-blue-800 hover:text-gray-300 lg:inline-block"
+              className="block hover:text-gray-300 lg:inline-block"
             >
              Working
             </Link>
@@ -92,7 +95,7 @@ const LoginNav = () => {
           <li>
             <Link
               to="/studyingroningen"
-              className="block text-blue-800 hover:text-gray-300 lg:inline-block"
+              className="block  hover:text-gray-300 lg:inline-block"
             >
             Study
             </Link>
@@ -100,7 +103,7 @@ const LoginNav = () => {
           <li>
             <Link
               to="/business"
-              className="block text-blue-800 hover:text-gray-300 lg:inline-block"
+              className="block  hover:text-gray-300 lg:inline-block"
             >
            Doing Business
             </Link>

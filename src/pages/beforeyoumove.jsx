@@ -37,14 +37,14 @@ function BeforeYouMove (){
 
        </div>*/}
        <div className="gridcontainer grid gap-2 p-10">
-            <div className="relative image image1 row-span-2"><img src={image5} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Practical Matters &#8594;</div></div>
-            <div className="relative image image3 col-span-2"><img src={image3} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>For Internationals &#8594;</div></div>
-            <div className="relative image image2"><img src={image2} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Expats &#8594;</div></div>
-            <div className="relative image image4"><img src={image4} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Student Housing &#8594;</div></div>
-            <div className="relative image image5"><img src={image1} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Your way Around &#8594;</div></div>
-            <div className="relative image beforemovegrid7 "><img src={house3} className=" gridimage w-full h-full object-cover"/><div className="absolute bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Student Housing &#8594;</div></div>  
-            <div className="relative image beforemovegrid5 row-span-2 "><img src={pondhouse} className="gridimage w-full h-full object-cover"/><div className="absolute bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Housing &#8594;</div></div>
-            <div className="relative image beforemovegrid6 col-span-2"><img src={holidayhouse} className=" gridimage w-full h-full object-cover"/><div className="absolute bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Explore Coutryside &#8594;</div></div>         
+            <div className="relative image beforemovediv1 row-span-2"><img src={image5} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Practical Matters &#8594;</div></div>
+            <div className="relative image beforemovediv1 col-span-2"><img src={image3} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>For Internationals &#8594;</div></div>
+            <div className="relative image beforemovediv1"><img src={image2} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Expats &#8594;</div></div>
+            <div className="relative image beforemovediv1"><img src={image4} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Student Housing &#8594;</div></div>
+            <div className="relative image beforemovediv1"><img src={image1} className="gridimage w-full h-full object-cover"/><div className="absolute  bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Your way Around &#8594;</div></div>
+            <div className="relative image beforemovediv1 "><img src={house3} className=" gridimage w-full h-full object-cover"/><div className="absolute bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Student Housing &#8594;</div></div>  
+            <div className="relative image beforemovediv1 row-span-2 "><img src={pondhouse} className="gridimage w-full h-full object-cover"/><div className="absolute bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Housing &#8594;</div></div>
+            <div className="relative image beforemovediv1 col-span-2"><img src={holidayhouse} className=" gridimage w-full h-full object-cover"/><div className="absolute bottom-10 left-10" style={{fontSize:'40px',color:'white',fontWeight:'bold'}}>Explore Coutryside &#8594;</div></div>         
 
        </div>
        </div>    

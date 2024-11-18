@@ -3,9 +3,9 @@ import GridComponent from "../Components/gridComponent";
 import finance from '../assets/finance.jpg';
 
 const items = [
-    { id: 1, title: "IT & Tech",link:'/it&techpage' },
-    { id: 2, title: "Finance",link:'/financepage' },
-    {id:3, title:'Energy', link:'/energypage'},
+    { id: 1, title: "IT & Tech",link:'/workingingroningen/it&techpage' },
+    { id: 2, title: "Finance",link:'/workingingroningen/financepage' },
+    {id:3, title:'Energy', link:'/workingingroningen/energypage'},
     { id: 4, title: "Security",link:'/' },
     { id: 5, title: "Peace and justice",link:'/' },
   ];

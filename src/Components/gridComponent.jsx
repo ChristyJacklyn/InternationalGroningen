@@ -15,13 +15,13 @@ function GridComponent({image,title,desc,items,listtitle}) {
             <div className="grid lg:grid-cols-[400px,auto] w-full col-span-2 mt-7">
                 
             {/* second row: second column with list */}
-                    <div className="uldiv flex flex-col text-blue-700 col-span-1 p-4 lg:p-10 row-span-1" >
-                        <div className="text-blue-800 hover:underline text-xl p-2" >{listtitle}</div>
-                        <div className="p-2" style={{}}>
-                            <ul className="text-xl">
+                    <div className="uldiv flex flex-col text-gray-400  col-span-1 p-4 lg:p-10 row-span-1" >
+                    <Link to='/workingingroningen'> <div className="hover:underline  hover:text-gray-500 text-xl p-2" >Working in Groningen</div></Link>
+                        <div className="p-2 " style={{}}>
+                            <ul className="text-xl ">
                                 {items.map((item) =>(
-                                <li key={item.id} className="hover:underline ">
-                                    <Link to={item.link}>- {item.title}</Link>
+                                <li key={item.id} className="hover:underline hover:text-gray-500">
+                                    <Link to={item.link}> {item.title}</Link>
                                </li>
                                 ))}
                                 

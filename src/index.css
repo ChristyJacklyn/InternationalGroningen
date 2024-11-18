@@ -96,11 +96,11 @@
    
 }
 
-.gridimage{
+.beforemovediv1:hover .gridimage{
     transition: all 0.5s ease;
 }
 
-.gridimage:hover, .activitydiv:hover {
+.gridimage:hover .activitydiv:hover {
     transform: scale(0.9); /* Slight zoom on hover */
   }
 
@@ -167,9 +167,11 @@
 }
 
 /* doing business grid image animation*/
+
+
 .buinessimage1:hover{
     position: relative;
-    animation: imagemove 2s ease;
+    animation: imagemove 3s ease;
 }
 
 .businessimage2:hover{
@@ -219,8 +221,11 @@
     from{right:100px}
     to{right:0px}
 }
+/*relocating-- beforeyoou movepage*/
 
-/* befor you move grid on study in griningen page*/
+
+
+/* befor you move grid on study in groningen page*/
 
 .gridarrow{
     transition: all 1s ease;
@@ -294,3 +299,13 @@
     text-decoration: underline ;
 }
 
+
+
+
+
+.outarrowdiv:hover .outarrow{
+    transform: scale(0.9) translateX(20px); /* Slight zoom on hover */
+}
+.outarrow{
+    transition: all 1s ease;
+}
